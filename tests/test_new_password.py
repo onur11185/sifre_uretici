@@ -12,6 +12,13 @@ def test_password_characters():
 Aşağıda önerilenlerden birini kullanarak başka bir test yazın. Alternatif olarak, kendi testinizi de oluşturabilirsiniz!
 Daha fazla test yazabilirseniz harika olur!
 
-1. Şifrenin uzunluğunun belirtilen uzunlukla eşleşip eşleşmediğini test edin  
+1. Şifrenin uzunluğunun belirtilen uzunlukla eşleşip eşleşmediğini test edin 
+
 2. Arka arkaya oluşturulan iki şifrenin farklı olup olmadığını test edin 
 """
+
+def password_lenght():
+    lenght = 20
+    passw = generate_password(lenght)
+    assert len(passw) == lenght
+
